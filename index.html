@@ -1,62 +1,119 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>لعبة جومانجا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>اسم اللعبة</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #1a1a1a, #000);
-      color: white;
-      font-family: 'Cairo', sans-serif;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #fff;
       text-align: center;
-      padding: 50px;
     }
-
-    h1 {
-      font-size: 48px;
+    header {
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3em;
       margin-bottom: 20px;
     }
-
-    p {
-      font-size: 20px;
+    header p {
+      font-size: 1.2em;
       max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
+      margin: 0 auto;
     }
-
-    .btn {
+    .buttons {
+      margin: 40px 0;
+    }
+    .buttons a {
       display: inline-block;
-      background: #ffcc00;
-      color: black;
+      margin: 10px;
       padding: 15px 30px;
-      font-size: 18px;
-      border-radius: 8px;
+      background-color: #ff5722;
+      color: #fff;
       text-decoration: none;
-      margin-top: 30px;
-      transition: 0.3s;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
     }
-
-    .btn:hover {
-      background: #ffdb4d;
+    .buttons a:hover {
+      background-color: #e64a19;
     }
-
-    img {
-      margin-top: 40px;
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    .features {
+      background-color: #1c1c1c;
+      padding: 60px 20px;
+    }
+    .features h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .feature {
+      background-color: #2e2e2e;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .feature h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    .feature p {
+      font-size: 0.9em;
+    }
+    footer {
+      background-color: #111;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .feature-list {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>مرحباً بك في لعبة جومانجا</h1>
-  <p>اختبر شجاعتك في عالم المغامرات! لعبة جومانجا ستأخذك في رحلة مليئة بالتحديات والإثارة. جاهز للبدء؟</p>
+  <header>
+    <h1>اسم اللعبة</h1>
+    <p>انطلق في مغامرة لا تُنسى في عالم مليء بالتحديات والإثارة. اكتشف أسرار اللعبة وواجه الأعداء لتحقيق النصر!</p>
+    <div class="buttons">
+      <a href="#">تحميل على App Store</a>
+      <a href="#">تحميل على Google Play</a>
+    </div>
+  </header>
 
-  <a class="btn" href="https://example.com/your-game.apk" target="_blank">تحميل اللعبة</a>
+  <section class="features">
+    <h2>مميزات اللعبة</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>رسومات مذهلة</h3>
+        <p>استمتع بتجربة بصرية فائقة الجودة مع تصاميم ثلاثية الأبعاد واقعية.</p>
+      </div>
+      <div class="feature">
+        <h3>أوضاع لعب متعددة</h3>
+        <p>اختر بين اللعب الفردي أو التحديات الجماعية مع أصدقائك عبر الإنترنت.</p>
+      </div>
+      <div class="feature">
+        <h3>تحديثات مستمرة</h3>
+        <p>احصل على محتوى جديد ومهام إضافية بانتظام للحفاظ على حماسك.</p>
+      </div>
+    </div>
+  </section>
 
-  <img src="screenshot.jpg" alt="لقطة من اللعبة">
+  <footer>
+    &copy; 2025 اسم اللعبة. جميع الحقوق محفوظة.
+  </footer>
 
 </body>
 </html>
